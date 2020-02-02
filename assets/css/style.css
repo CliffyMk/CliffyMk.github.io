@@ -268,6 +268,7 @@ img#profilePhoto {
 /* timeline css */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
@@ -479,6 +480,7 @@ header p {
         margin: 0 auto;
         margin-top: 20px;
     }
+
     .timeline li:after {
         content: "";
         display: block;
@@ -486,33 +488,40 @@ header p {
         clear: both;
         visibility: hidden;
     }
+
     .timeline .hexa {
         left: -28px;
         right: auto;
         top: 8px;
     }
+
     .timeline .direction-l .hexa {
         left: auto;
         right: -28px;
     }
+
     .direction-l {
         position: relative;
         width: 310px;
         float: left;
         text-align: right;
     }
+
     .direction-r {
         position: relative;
         width: 310px;
         float: right;
         text-align: left;
     }
+
     .flag-wrapper {
         display: inline-block;
     }
+
     .flag {
         font-size: 18px;
     }
+
     .direction-l .flag:after {
         left: auto;
         right: -16px;
@@ -522,6 +531,7 @@ header p {
         border-left-color: rgb(254, 254, 254);
         border-width: 8px;
     }
+
     .direction-r .flag:after {
         top: 50%;
         margin-top: -8px;
@@ -530,20 +540,25 @@ header p {
         border-width: 8px;
         left: -8px;
     }
+
     .time-wrapper {
         display: inline;
         vertical-align: middle;
         margin: 0;
     }
+
     .direction-l .time-wrapper {
         float: left;
     }
+
     .direction-r .time-wrapper {
         float: right;
     }
+
     .time {
         padding: 5px 10px;
     }
+
     .direction-r .desc {
         margin: 1em 0 0 0.75em;
     }
@@ -555,16 +570,28 @@ header p {
         margin: 0 auto;
         margin-top: 20px;
     }
+
     .direction-l {
         position: relative;
         width: 380px;
         float: left;
         text-align: right;
     }
+
     .direction-r {
         position: relative;
         width: 380px;
         float: right;
         text-align: left;
     }
+}
+
+#exampleModalCenter-wu>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {}
+
+#exampleModalCenter-xor>div>div>div>div,
+#exampleModalCenter-wu>div>div>div>div {
+    margin-bottom: 32px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
 }
