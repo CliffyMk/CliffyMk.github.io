@@ -595,3 +595,10 @@ header p {
     letter-spacing: 0px;
     word-spacing: 2px;
 }
+
+.timeline>li:nth-child(1)>div:nth-child(1)>div:nth-child(1)>button:nth-child(2),
+.timeline>li:nth-child(2)>div:nth-child(1)>div:nth-child(1)>button:nth-child(2),
+.timeline>li:nth-child(3)>div:nth-child(1)>div:nth-child(1)>button:nth-child(2) {
+    border: none;
+    background: none;
+}
