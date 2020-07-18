@@ -105,7 +105,7 @@
             <!-- ./ Main Heading-->
             <div class="row main-low-margin text-center">
                 <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
-                    <img class="img-thumbnail" src="assets/img/profile_img.jpg" alt="">
+                    <img class="img-thumbnail" src="assets/img/profile_img.jpeg" alt="">
                     <h4>
                         <strong>Manish Kumar</strong>
                     </h4>
@@ -493,7 +493,7 @@ No need to call annual general meetings to decide and broadcast points.
                     </div>
                 </div>
             </div>
-            <div class="btn btn-sm btn-primary" onClick="openDialog()">*</div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <!-- ./ Row Content-->
         </div>
     </div>
@@ -545,10 +545,6 @@ No need to call annual general meetings to decide and broadcast points.
                         Technology Used : Angular, Ionic, NodeJS, AWS, HTML, CSS, JS, Jasmine
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                </div>
             </div>
         </div>
     </div>
@@ -599,6 +595,8 @@ No need to call annual general meetings to decide and broadcast points.
                         AWS.</div>
                 </div>
                 <div class="modal-footer">
+                    
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
@@ -609,6 +607,16 @@ No need to call annual general meetings to decide and broadcast points.
         // $('#myModal').on('shown.bs.modal', function () {
         //     $('#myInput').trigger('focus')
         // })
+        var query = window.location.search.substring(1);
+        var qs = parse_query_string(query);
+        window.c = url.searchParams.get("c");
+        if(!window.c)
+            document.getElementById('buttonFlirt').style.display='none';
+        
+        flirtClick=()=>{
+            if(window.c)
+                alert('number dedo behen')
+        }
     </script>
     <!--END FOOTER SECTION -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
